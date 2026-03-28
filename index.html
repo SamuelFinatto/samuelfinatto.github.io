@@ -30,6 +30,11 @@
     <link rel="preconnect" href="https://www.linkedin.com" crossorigin />
     <link rel="preconnect" href="https://github.com" crossorigin />
     
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.tsx" as="script" crossorigin />
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preload" href="/profile.jpeg" as="image" type="image/jpeg" />
+    
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://samuelfinatto.github.io/" />
@@ -165,6 +170,6 @@
     </noscript>
     
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer crossorigin></script>
   </body>
 </html>

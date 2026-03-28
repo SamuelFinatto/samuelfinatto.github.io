@@ -38,7 +38,16 @@ function App() {
           </div>
           <div className="hero-image">
             <figure className="profile-photo">
-              <img src="/profile.jpeg" alt="Professional headshot of Samuel Finatto, Senior Cloud Engineer" width="400" height="400" loading="eager" />
+              <img
+                src="/profile.jpeg"
+                srcSet="/profile.jpeg 1x, /profile.jpeg 2x"
+                alt="Professional headshot of Samuel Finatto, Senior Cloud Engineer"
+                width="400"
+                height="400"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+              />
             </figure>
           </div>
         </div>
