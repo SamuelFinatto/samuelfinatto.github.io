@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Samuel Finatto</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      
+      .container {
+        text-align: center;
+        max-width: 600px;
+      }
+      
+      .error-code {
+        font-size: 120px;
+        font-weight: bold;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        line-height: 1;
+      }
+      
+      h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+      
+      p {
+        font-size: 18px;
+        color: #a0a0a0;
+        margin-bottom: 32px;
+        line-height: 1.6;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      }
+      
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+      }
+      
+      .links {
+        margin-top: 32px;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .link {
+        color: #667eea;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.2s;
+      }
+      
+      .link:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+    </style>
+    
+    <!-- Redirect to home page after 5 seconds -->
+    <script>
+      // Store the current path for potential future use
+      sessionStorage.setItem('404-redirect-from', window.location.pathname);
+      
+      // Redirect to home page after 5 seconds
+      setTimeout(function() {
+        window.location.href = '/';
+      }, 5000);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error-code">404</div>
+      <h1>Page Not Found</h1>
+      <p>
+        Oops! The page you're looking for doesn't exist. 
+        You'll be redirected to the home page in 5 seconds, 
+        or you can click the button below.
+      </p>
+      <a href="/" class="btn">Go to Home Page</a>
+      
+      <div class="links">
+        <a href="/#about" class="link">About</a>
+        <a href="/#experience" class="link">Experience</a>
+        <a href="/#skills" class="link">Skills</a>
+        <a href="/#projects" class="link">Projects</a>
+        <a href="/#contact" class="link">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
