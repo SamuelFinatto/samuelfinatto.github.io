@@ -306,8 +306,22 @@ function App() {
       {/* Footer */}
       <footer className="footer" role="contentinfo">
         <div className="container">
+          <nav className="footer-nav" aria-label="Footer navigation">
+            <a href="#about" className="footer-link">About</a>
+            <a href="#experience" className="footer-link">Experience</a>
+            <a href="#skills" className="footer-link">Skills</a>
+            <a href="#projects" className="footer-link">Projects</a>
+            <a href="#contact" className="footer-link">Contact</a>
+          </nav>
+          <div className="footer-social">
+            <a href="https://www.linkedin.com/in/samuel-finatto" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+            <span className="separator">•</span>
+            <a href="https://github.com/samuelfinatto" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+            <span className="separator">•</span>
+            <a href="mailto:samueldfinatto@gmail.com" aria-label="Email Contact">Email</a>
+          </div>
           <p>&copy; <time dateTime="2026">2026</time> Samuel Finatto. All rights reserved.</p>
-          <p className="footer-note">Built with React & TypeScript</p>
+          <p className="footer-note">Built with React & TypeScript | <a href="/" className="footer-link">Home</a> | <a href="/sitemap.xml" className="footer-link">Sitemap</a></p>
         </div>
       </footer>
     </div>
