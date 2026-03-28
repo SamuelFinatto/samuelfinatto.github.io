@@ -24,9 +24,6 @@ jobs:
           node-version: '24'
           cache: 'npm'
 
-      - name: Go to folder
-        run: cd github-page
-          
       - name: Install dependencies
         run: npm ci
         
@@ -39,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './github-page/dist'
+          path: './dist'
 
   deploy:
     environment:
