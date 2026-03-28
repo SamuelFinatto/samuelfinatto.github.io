@@ -38,7 +38,7 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="profile-photo">
-              <img src={`${import.meta.env.BASE_URL}profile.jpeg`} alt="Samuel Finatto" />
+              <img src="/profile.jpeg" alt="Samuel Finatto" />
             </div>
           </div>
         </div>
